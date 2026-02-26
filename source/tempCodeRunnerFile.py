@@ -74,7 +74,7 @@ def arcade_voice(text):
 # --- 5. DUAL AI VISION TRACKING ---
 class VisionEngine:
     def __init__(self):
-        self.cap = cv2.VideoCapture(5)
+        self.cap = cv2.VideoCapture(1)
         self.hands = mp.solutions.hands.Hands(max_num_hands=2, min_detection_confidence=0.7, min_tracking_confidence=0.7)
         self.hand_data = [] 
         self.running = True
